@@ -1,10 +1,10 @@
 title: Exocore
-author: JamesLiao333
-profile_link: https://twitter.com/jamesliao333
-profile_pic: assets/images/james1.png
+author: Donna Horashi
+profile_link: https://twitter.com/donnahorashi
+profile_pic: assets/images/donna1.png
 
 source: .
-url: https://compassionate-neumann-f910fd.netlify.app/
+url: https://donnahorashi.netlify.app/
 baseurl: ''
 destination: ./_site
 
@@ -21,7 +21,7 @@ kramdown:
 readme_index:
   enabled: true
 
-repository: hot-domme/james-liao
+repository: donnahorashi/donna-horashi
 
 sass:
     sass_dir: _sass

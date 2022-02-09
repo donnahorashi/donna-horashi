@@ -1,3 +1,14 @@
+---
+layout: article
+category: article
+title: Preparing Sashimi at Home
+subtitle: Comprehensive Guide
+topic: Food
+date: 9 feb 2021
+tags: food health
+---
+
+
 # Preparing Sashimi at Home: Comprehensive Guide
 
 ## Sourcing Fish
