@@ -1,0 +1,167 @@
+---
+layout: default
+---
+<div class="row">
+
+  <div class="leftcolumn">
+    <div class="card">
+      <h1 class="post-title">{{page.title}}</h2>
+        {% for subtitle in page.subtitle %}
+        {% unless page.subtitle == "" %}  
+      <h2 class="post-desc">{{page.subtitle}}</h2>
+        {% endunless %}
+        {% endfor %}
+      <div class="post-body">
+
+{{ content }}
+
+    </div>
+    </div>
+
+    {% include backlinks.html %}
+
+  </div>
+  <div class="rightcolumn">
+
+    <div class="side-card">
+      <h1>Navigation</h1>
+      <div class="side-card-body">
+  	<p>You are currently viewing the <strong>{{page.category | capitalize}}</strong> section of this site.</p>
+       <hr> 
+      <a href="{{site.baseurl}}/pages/all-{{page.category}}/">View {{page.category | capitalize}} Index</a>
+      <br>
+      <a href="{{site.baseurl}}/pages/tags#{{page.category}}">View {{page.category | capitalize}} By Tags</a>
+      <br>
+      <a href="{{site.baseurl}}/pages/archive/">View Archive of All Sections</a>
+      <br>
+      <a href="/">Go Home</a>
+<hr>
+
+  </div>
+    </div>  
+
+    <div class="side-card">
+      <h1> Related</h1>
+      <div class="side-card-body">
+   
+<h2>Articles</h2>
+{% assign maxRelated = 5 %}
+{% assign minCommonTags =  1 %}
+{% assign maxRelatedCounter = 0 %}   
+<ul>
+	{% for article in site.articles %}
+    
+    	{% assign sameTagCount = 0 %}
+        {% assign commonTags = '' %}
+    
+		{% for tag in article.tags %}
+        	{% if article.url != page.url %}
+            	{% if article.tags contains tag %}
+            	{% assign sameTagCount = sameTagCount | plus: 1 %}
+            	{% endif %}
+            {% endif %}
+		{% endfor %}
+    
+        {% if sameTagCount >= minCommonTags %}
+    		<li><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a></li>
+            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+            
+            {% if maxRelatedCounter >= maxRelated %}
+                {% break %}
+            {% endif %}
+		{% endif %}
+	{% endfor %}
+</ul>
+
+
+<h2>Journal Entries</h2>
+{% assign maxRelated = 5 %}
+{% assign minCommonTags =  1 %}
+{% assign maxRelatedCounter = 0 %}   
+<ul>
+	{% for journal in site.journal %}
+    
+    	{% assign sameTagCount = 0 %}
+        {% assign commonTags = '' %}
+    
+		{% for tag in journal.tags %}
+        	{% if journal.url != page.url %}
+            	{% if journal.tags contains tag %}
+            	{% assign sameTagCount = sameTagCount | plus: 1 %}
+            	{% endif %}
+            {% endif %}
+		{% endfor %}
+    
+        {% if sameTagCount >= minCommonTags %}
+    		<li><a href="{{ site.baseurl }}{{ journal.url }}">{{ journal.title }}</a></li>
+            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+            
+            {% if maxRelatedCounter >= maxRelated %}
+                {% break %}
+            {% endif %}
+		{% endif %}
+	{% endfor %}
+</ul>
+
+
+<h2>Wiki Notes</h2>
+{% assign maxRelated = 5 %}
+{% assign minCommonTags =  1 %}
+{% assign maxRelatedCounter = 0 %}   
+<ul>
+	{% for note in site.notes %}
+    
+    	{% assign sameTagCount = 0 %}
+        {% assign commonTags = '' %}
+    
+		{% for tag in note.tags %}
+        	{% if note.url != page.url %}
+            	{% if note.tags contains tag %}
+            	{% assign sameTagCount = sameTagCount | plus: 1 %}
+            	{% endif %}
+            {% endif %}
+		{% endfor %}
+    
+        {% if sameTagCount >= minCommonTags %}
+    		<li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a></li>
+            {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+            
+            {% if maxRelatedCounter >= maxRelated %}
+                {% break %}
+            {% endif %}
+		{% endif %}
+	{% endfor %}
+</ul>
+
+ </div>
+    </div>  
+
+    <div class="side-card">
+      <a href="{{site.baseurl}}/pages/tags/"><h1> Tags</h1></a>
+      <div class="side-card-body">
+        <a href="{{site.baseurl}}/pages/tags/"><p>See All Tags</p></a>
+        <hr>
+      {% for tag in page.tags %}
+      <a href="{{site.baseurl}}/pages/tags/#{{ tag }}">{{ tag }}</a>
+      <br>
+      {% endfor %}
+
+ </div>
+    </div>  
+    
+  </div>
+</div>
+
+          
+<script type="text/javascript">
+  // Hack: Replace page-link with "Page Title"
+  document.querySelectorAll(".markdown-body a[title]").forEach((a) => {
+    a.innerText = a.title;
+  });
+  // Hack: Remove .md extension from wikilinks to get the html in jekyll
+  document.querySelectorAll("a").forEach(l => {
+    if (l.href.endsWith('.md')) {
+      l.href = l.href.substring(0, l.href.length-3)
+    }
+  })
+</script>

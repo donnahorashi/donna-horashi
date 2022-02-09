@@ -1,0 +1,13 @@
+
+
+# Your name goes at the top.
+# It must be the same as the
+# 'author' variable in your .config file
+
+JamesLiao333:
+  picture: /assets/images/james1.png
+  twitter: JamesLiao333
+  email: 
+  
+  # Add your own variables if you wish,
+  # and then summon them with liquid tags

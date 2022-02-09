@@ -1,0 +1,11 @@
+<div class="backlinks-box">
+    <h1>Backlinks</h1>
+    <div class="backlinks-grid">
+    {% for backlink in page.backlinks %}
+    {% assign linked_doc = site.documents | where: "url", backlink.url | first %}
+    <a href="{{backlink.url}}"">{{ linked_doc.title }}</a> 
+    {% else %}
+    <p>There are no pages linking back to this one. </p>
+    {% endfor %}
+    </div>
+  </div>

@@ -1,0 +1,67 @@
+---
+layout: page
+category: archive
+title: Archive
+subtitle:
+date: 
+tags: 
+---
+
+<h1 class="index-title">Archive</h1>
+
+  <section class="archive-container">
+  
+    <div class="card">
+      <h1 class="post-title">Articles</h1>
+        {% assign sorted = site.articles | sort: 'date' | reverse %}
+  {% for article in sorted %}	
+    <a href="{{ article.url }}"><div class="side-card-link">
+       <p class="link-title">{{ article.title }}</p>
+       <p class="link-date">{{ article.date | date: "%m/%d/%Y" }}</p>			
+      </div>
+          </a>
+       {% endfor %}
+    </div>
+
+    <div class="card">
+      <h1 class="post-title">Journal Entries</h1>
+        {% assign sorted = site.journal | sort: 'date' | reverse %}
+  {% for journal in sorted %}	
+    <a href="{{ journal.url }}"><div class="side-card-link">
+       <p class="link-title">{{ journal.title }}</p>
+       <p class="link-date">{{ journal.date | date: "%m/%d/%Y" }}</p>			
+      </div>
+          </a>
+       {% endfor %}
+    </div>
+
+    <div class="card">
+      <h1 class="post-title">Notes</h1>
+        {% assign sorted = site.notes | sort: 'date' | reverse %}
+        {% for note in sorted %}	
+          <a href="{{ note.url }}"><div class="side-card-link">
+             <p class="link-title">{{ note.title }}</p>
+             <p class="link-date">{{ note.date | date: "%m/%d/%Y" }}</p>			
+            </div>
+                </a>
+             {% endfor %}
+    </div>
+
+  </section>
+
+
+
+
+          
+<script type="text/javascript">
+  // Hack: Replace page-link with "Page Title"
+  document.querySelectorAll(".markdown-body a[title]").forEach((a) => {
+    a.innerText = a.title;
+  });
+  // Hack: Remove .md extension from wikilinks to get the html in jekyll
+  document.querySelectorAll("a").forEach(l => {
+    if (l.href.endsWith('.md')) {
+      l.href = l.href.substring(0, l.href.length-3)
+    }
+  })
+</script>

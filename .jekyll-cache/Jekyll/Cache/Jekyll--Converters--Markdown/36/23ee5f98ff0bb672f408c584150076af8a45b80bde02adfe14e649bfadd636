@@ -1,0 +1,101 @@
+I"J<p><strong><code class="language-plaintext highlighter-rouge">It's best to read this document with the markdown and rendered output side-by-side to see how the markdown syntax is rendered at build time.</code></strong></p>
+
+<h2 id="headers">Headers</h2>
+
+<p>The above is a level 2 heading, preceded by <code class="language-plaintext highlighter-rouge">##</code> and a space.</p>
+
+<p>There’s nothing special about the way the Exocore processes headers— it’s just standard markdown. However, each header will render with an anchor link. If you hover over a heading and click the link icon that appears, the URL in your browser will reflect the section that you clicked. Now, if you copy that URL it will link directly to the heading that you clicked.</p>
+
+<h3 id="heading-levels">Heading levels</h3>
+
+<p>The above is a level 3 heading, preceded by <code class="language-plaintext highlighter-rouge">###</code> and a space.</p>
+
+<p>Here’s some advice: Only use top-level headings (preceded by <code class="language-plaintext highlighter-rouge">#</code>) for the document’s title. This is a markdown standard, and the Exocore steals your first top-level heading to use as the title of the page in the final rendered output anyway. For intra-document section titles, use a level 2 heading. It’s for the best.</p>
+
+<h2 id="examples-of-wikilinks">Examples of Wikilinks:</h2>
+
+<p>Here are some wikilinks:</p>
+
+<ul>
+  <li><a class="wiki-link" href="/articles/exocore/">the exocore package</a></li>
+  <li><a class="wiki-link" href="/articles/seo/">search engine optimisation</a></li>
+  <li><a class="wiki-link" href="/journal/business-virtue/">the american samurai</a></li>
+  <li><a class="wiki-link" href="/daily/2022-02-04/">2022 02 04</a>.</li>
+</ul>
+
+<p>In your local directory they are written as the title of their mardown file, surrounded by double square brackets. However, in the final render they are presented by default as the page’s title. This saves you typing out the whole page title in your markdown document, and allows the Foam VSCode extension to suggest files as you type. Below you can read about how to change their presentation.</p>
+
+<p><a class="wiki-link" href="/articles/ginseng/">You can alias a link like this</a> if you don’t want to keep the title. Heads up— this link goes to an article about ginseng.</p>
+
+<p><a class="wiki-link" href="/articles/syntax/#wikilink-embeds">This wikilink is aliased with this text, and it points to a header further down on this very page</a> Under that header you will find a different sort of wikilink— an embed. The content of another note is embedded on a page.</p>
+
+<p>Check out the backlinks section at the bottom of <a class="wiki-link" href="/journal/business-virtue/">this link’s</a> target note. You’ll find that this very article is automatically added. Backlinks are automatic, and display all the notes with internal links pointing to them.</p>
+
+<h2 id="wikilink-embeds">Wikilink Embeds</h2>
+
+<p>Here I’ve The below text is embedded, using the same wikilink syntax as normal, but with an <code class="language-plaintext highlighter-rouge">!</code> prepended. The full text of the linked note will be included.</p>
+
+<div class="embed-wrapper"><div class="embed-title">Abu Dhabi's Postal system</div><div class="embed-content"><p>In abu dhabi they do not have a functioning residential postal system. everyone has a PO box, and most people don’t have even a street number. addresses look like this: SW-17 Plot 46A Villa B M’eshad First, Al Fahad City, Abu Dhabi, UAE. they call residential neighbourhoods that you could walk across in 10 mins ‘cities’, and some ‘villages’ are as big as ‘cities’. if you type an abu dhabi address into google maps it has no idea where it is.</p></div><a class="embed-wiki-link" href="/notes/abu-dhabi-postal/"></a></div>
+
+<h2 id="tables">Tables</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>You</td>
+      <td>can</td>
+      <td>create a table</td>
+      <td>like this.</td>
+    </tr>
+    <tr>
+      <td>A newline</td>
+      <td>in markdown</td>
+      <td>extends the table</td>
+      <td>vertically.</td>
+    </tr>
+    <tr>
+      <td>A pipe</td>
+      <td>extends the table</td>
+      <td>laterally.</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="examples-of-footnotes">Examples of Footnotes:</h2>
+
+<p>Here’s a simple footnote with no linebreaks in it.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> Each footnote is an anchor link to the bottom of the page, with a return link attached.</p>
+
+<p>If you want to add multi-paragraph footnotes, indent your second paragraph, like this.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+
+<p>You can put a footnote’s markdown reference immediately under a paragraph, like this<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>, or clump them at the end. Either way, they will appear at the bottom in your rendered content.</p>
+
+<p>Footnotes automatically form a numbered list, and can also be mapped by name, like this<sup id="fnref:named-footnote" role="doc-noteref"><a href="#fn:named-footnote" class="footnote" rel="footnote">4</a></sup></p>
+
+<h2 id="sidenotes">Sidenotes</h2>
+
+<p>Sidenotes are cool, but they need javascript. I’ll figure that out soon.</p>
+
+<h2 id="naming-files">Naming files</h2>
+
+<p>Don’t use whitespace in your filenames— instead, name-them-like-this.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>This is the first footnote. Note the return button: <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Here’s a footnote with multiple paragraphs.</p>
+
+      <p>Indent paragraphs to include them in the footnote. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>This footnote appears immediately underneath it’s referring paragraph in this document’s original markdown, but on the rendered website it shows at the bottom. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:named-footnote" role="doc-endnote">
+      <p>This footnote has the name ‘named-footnote’. it’s still numbered and appears in sequence the same way the others do, but naming it might help you manage a document with many footnotes when dealing with your local markdown. <a href="#fnref:named-footnote" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET

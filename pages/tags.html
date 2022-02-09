@@ -1,0 +1,83 @@
+---
+layout: default
+category: archive
+title: tags
+---
+
+<br>
+<div class="side-card">
+<h1 id="article">Articles by Tag</h1>
+</div>
+<br>
+<div class="tag-grid">
+  {% assign tags =  site.articles | map: 'tags' | join: ','  | split: ',' | uniq %}
+  {% for tag in tags %}
+  <div style="text-align: center" id="{{tag}}" class="tile">
+    
+    <h1>{{ tag }}</h1>
+    {% for article in site.articles %}
+      {% if article.tags contains tag %}
+      <a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</a>
+      <br>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+  </div>
+
+  <br>
+
+<div class="side-card">
+<h1 id="note">Wiki Notes by Tag</h1>
+</div>
+<br>
+
+<div class="tag-grid">
+  {% assign tags =  site.notes | map: 'tags' | join: ','  | split: ',' | uniq %}
+  {% for tag in tags %}
+  <div style="text-align: center" id="{{tag}}" class="tile">
+    
+    <h1>{{ tag }}</h1>
+    {% for note in site.notes %}
+      {% if note.tags contains tag %}
+      <a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+  </div>
+
+  <br>
+
+  <div class="side-card">
+  <h1 id="journal">Journal Entries by Tag</h1>
+  </div>
+  <br>
+
+<div class="tag-grid">
+{% assign tags =  site.journal | map: 'tags' | join: ','  | split: ',' | uniq %}
+{% for tag in tags %}
+<div style="text-align: center" id="{{tag}}" class="tile">
+  
+  <h1>{{ tag }}</h1>
+  {% for journal in site.journal %}
+    {% if journal.tags contains tag %}
+    <a href="{{ site.baseurl }}{{ journal.url }}">{{ journal.title }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endfor %}
+</div>
+  
+<script type="text/javascript">
+  // Hack: Replace page-link with "Page Title"
+  document.querySelectorAll(".markdown-body a[title]").forEach((a) => {
+    a.innerText = a.title;
+  });
+  // Hack: Remove .md extension from wikilinks to get the html in jekyll
+  document.querySelectorAll("a").forEach(l => {
+    if (l.href.endsWith('.md')) {
+      l.href = l.href.substring(0, l.href.length-3)
+    }
+  })
+</script>

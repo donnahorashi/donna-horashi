@@ -1,0 +1,34 @@
+# 4 LATEST POSTS
+
+```
+
+<div class="tile">
+  <a href="/pages/all-articles"><h1>Articles</h1></a>
+  <div class="tile-body">
+    {% assign sorted = site.articles | sort: 'date' | reverse %}
+  {% for article in sorted limit:4 %}	
+    <a href="{{ article.url }}"><div class="side-card-link">
+       <p class="link-title">{{ article.title }}</p>
+       <p class="link-date">{{ article.date | date: "%m/%d/%Y" }}</p>			
+      </div>
+          </a>
+       {% endfor %}
+</div>
+</div>
+
+<div class="tile">
+  <a href="/pages/all-journal"><h1>Journal</h1></a>
+  <div class="tile-body">
+    {% assign sorted = site.journal | sort: 'date' | reverse %}
+  {% for journal in sorted limit:4 %}	
+    <a href="{{ journal.url }}"><div class="side-card-link">
+       <p class="link-title">{{ journal.title }}</p>
+       <p class="link-date">{{ journal.date | date: "%b %e, %Y" }}</p>			
+      </div>
+          </a>
+       {% endfor %}
+</div>
+</div>
+
+
+```

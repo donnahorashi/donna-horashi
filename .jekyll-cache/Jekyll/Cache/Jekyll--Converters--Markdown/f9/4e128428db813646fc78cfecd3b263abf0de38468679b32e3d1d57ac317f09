@@ -1,0 +1,116 @@
+I"n%<h2 id="principles"><a href="https://edith.reisen/lifestyle/travel/flights.html#principles">Principles</a></h2>
+
+<p>Flight booking should be able to be done quickly with low mental and monetary overhead. It should make use of advanced, but accesible tools that can accommodate any needed itinerary flexibility. There should be limited reliance on paid applications due to long-term unreliability.</p>
+
+<h2 id="timing-flights"><a href="https://edith.reisen/lifestyle/travel/flights.html#timing">Timing Flights</a></h2>
+
+<p>Basic heuristics:</p>
+
+<ul>
+  <li>Ideal time to buy tickets is 1 - 3 months before you fly.</li>
+  <li>Ideal time for flights bought with miles is more than 11 months before, or within the month of departure.</li>
+  <li>Price tends to rise within 21 days of a flight.</li>
+  <li>Tuesdays and Wednesdays are the best days to fly domestically.</li>
+  <li>Thursdays is the best day to fly internationally.</li>
+  <li>Including a Saturday night will often discount a fare.</li>
+  <li>A round-trip lasting longer than 7 days will often discount a fare.</li>
+</ul>
+
+<p>The reason for these is due to the nature of business travel, airlines’ primary market today. Businessmen tend to travel during the week, leaving on Monday and arriving home on Friday (which sometimes require a Thursday departure). Thus, the mid-week and saturday discounts.</p>
+
+<p>It’s also the reason last-minute tickets are no longer cheap. They used to cut prices last-minute to meet capacity but now they’re raised sharply to target business travelers who expense their tickets anyway.</p>
+
+<h2 id="flight-tools"><a href="https://edith.reisen/lifestyle/travel/flights.html#tools">Flight Tools</a></h2>
+
+<p>These tools will help you find and decide on a flight plan, which can then be separately booked at an <a href="https://edith.reisen/lifestyle/travel/flights.html#agency">agency</a> or directly at the <a href="https://edith.reisen/lifestyle/travel/flights.html#airline_site">airline’s website.</a></p>
+
+<p><a href="https://matrix.itasoftware.com/">ITA Matrix</a></p>
+
+<p>Most powerful flight search engine, allowing full control to fine tune advance route options — e.g. forced layovers, multiple airport lookup, etc.</p>
+
+<p>Copy and Paste itinerary to <a href="https://bookwithmatrix.com/">BookWithMatrix</a> to quickly find the selected flights. ITA Matrix can be even further extended with the <a href="http://archive.is/ZDjRd">Power Tools</a> userscript.</p>
+
+<p><a href="https://flightconnections.com/">Flight Connections</a></p>
+
+<p>Flight database that accomodates non-intuitive searches — e.g. all outbound flights from an airport, or all flights offered by a carrier — facilitating complex itineraries. Provides links for found flights to third-party booking agencies.</p>
+
+<p><a href="https://www.expertflyer.com/">ExpertFlyer ($100/yr)</a></p>
+
+<p>Advanced suite of flyer search tools providing all relevant information to a flight: airline schedules, seat maps, flight statuses, flight inventory, award/upgrade spaces, etc.</p>
+
+<p><a href="https://www.seatguru.com/">SeatGuru</a></p>
+
+<p>Seatmap database with crowdsourced reviews on each flight, seat and in-flight-amenities. Operated by same team as ExpertFlyer.</p>
+
+<p><a href="http://www.awardhacker.com/">Award Hacker</a></p>
+
+<p>Search flights based on miles value, similar to ExpertFlyer’s (Premium) award search.</p>
+
+<p>Other useful tools include <a href="https://flightaware.com/">FlightAware,</a> for flight lookup and tracking, <a href="https://www.wheretocredit.com/">Where to Credit,</a> listing what miles for an airline can be credited to which partners and at what value, and <a href="http://tripit.com/">Tripit,</a> for itinerary organization.</p>
+
+<h2 id="booking-agencies"><a href="https://edith.reisen/lifestyle/travel/flights.html#booking">Booking Agencies</a></h2>
+
+<p><a href="https://www.google.com/flights/">Google Flights</a></p>
+
+<p>Powered by ITA Matrix, which was acquired by Google in 2011 to build Google Flights. Clean interface with open-ended searches and strong recommendations that offer valuable alternatives on the edge of submitted criteria — e.g. suggesting slightly different dates or airports. The ability to <a href="https://support.google.com/travel/answer/6235879?">set fare alerts</a> is another noteworthy feature.</p>
+
+<p><a href="https://www.momondo.com/">Momondo</a></p>
+
+<p>Meta search engine that aggregates all the major search engines, consistently producing cheaper results than the alternative meta search engines — i.e. <a href="http://archive.is/TG7uY">Kayak</a> and <a href="https://www.skyscanner.com/">Skyscanner.</a></p>
+
+<p><a href="http://www.azair.com//">AZair</a></p>
+
+<p>Best search engine for finding cheap fares on low cost carriers and local airports. Does not include full-service carriers in its database.</p>
+
+<p><a href="https://panflights.com/">PanFlights</a></p>
+
+<p>Emphasizes flexible travel dates and destination (e.g. radius search) with intelligent stopover suggestions.</p>
+
+<p>Other innovative engines include <a href="https://skiplagged.com/">Skiplagged,</a> infamously sued by United for its incorporation of <a href="https://en.wikipedia.org/wiki/Airline_booking_ploys#Hidden_city_ticketing">“hidden city”</a> tickets in its algorithm, <a href="http://hopper.com/">Hopper,</a> which delivers recommendations on the best time to book a flight based on historical data and <a href="https://airwander.com//">Air Wander,</a> which supports multi-day stopovers.</p>
+
+<h3 id="airline-websites">Airline Websites</h3>
+
+<p>Search engines are useful for finding desired flights, but it’s usually cheapest to book a flight with the airline directly. Airlines also routinely give preference to travellers who book directly in seat assignment, minor perks, etc. as well as providing leverage in the case of changes, delays or cancellations without the travel agency’s added change/cancellation fees or <a href="http://archive.is/jnYQw">the airline’s own surcharges.</a></p>
+
+<p>After finding a flight using an engine, you should then look up the same flight on the airline’s own website and make the reservation there.</p>
+
+<h2 id="travel-agents"><a href="https://edith.reisen/lifestyle/travel/flights.html#agent">Travel Agents</a></h2>
+
+<p>Traditional travel agencies are ineffective due to operating on a partnered commissions based model — that is, they choose offerings that give them the most comission, rather than what provides the client the most value.</p>
+
+<p>However, <a href="https://flightfox.com/">FlightFox</a> is a modern firm made up of experts and <a href="https://edith.reisen/lifestyle/travel/flights.html#hobbyist">“travel hacking” hobbyists</a> that receive a direct fee for every request serviced. Critically, they operate on the model where you provide your lowest found fare — along with trip details and criteria — and if their assigned agent cannot beat your fare + their agent’s fee, they resign the case and you pay nothing. In this way, availing their services will never cost money and can only save money.</p>
+
+<p>The agents provided also double as consultants and will answer any questions on visas, hotel arrangements, etc.</p>
+
+<p><a href="http://flystein.com/">Flystein</a> is an alternative with a lower base fee ($30 opposed to $50 for one-way, single traveler), but the former is preferred for its professionalism and clean interface.</p>
+
+<h2 id="recommended-workflow"><a href="https://edith.reisen/lifestyle/travel/flights.html#workflow">Recommended Workflow</a></h2>
+
+<ol>
+  <li>Plan travel criteria:</li>
+</ol>
+
+<ul>
+  <li>City to City</li>
+  <li>Ideal Departure &amp; Arrival date/time ranges</li>
+  <li>Number of passengers</li>
+  <li>Carry-on or check-in</li>
+</ul>
+
+<ol>
+  <li>Search <a href="https://matrix.itasoftware.com/">ITA Matrix</a>, <a href="https://www.momondo.com/">Momondo</a> and — if relevant — <a href="http://www.azair.com//">AZair</a> for the cheapest fare</li>
+  <li>Provide found fare and travel criteria to <a href="https://flightfox.com/">FlightFox</a></li>
+  <li>Book tickets directly with airline, or at agent recommended vendor</li>
+  <li>Claim miles to Loyalty Account</li>
+</ol>
+
+<h2 id="automated-compensation"><a href="https://edith.reisen/lifestyle/travel/flights.html#compensation">Automated Compensation</a></h2>
+
+<p>Passengers are generally entitled to compensations in the case of flight cancellations, delays, overbook or lost or damaged luggage. The process to file these claims are usually frustating and confusing so are not often followed through.</p>
+
+<p>There are a <a href="http://archive.is/qWbld">variety of companies</a> that will handle the legal process for you. <a href="https://www.airhelp.com/">Airhelp</a> is the largest and can be tied to your email to automatically scan flights (similar to <a href="https://edith.reisen/lifestyle/travel/tools.html#tripit">TripIt</a>) for any possible compensations — it goes without saying you should maintain a dedicated travel email if you allow access by external apps.</p>
+
+<h2 id="flight-hobbyist-communities"><a href="https://edith.reisen/lifestyle/travel/flights.html#hobbyist">Flight Hobbyist Communities</a></h2>
+
+<p>There are various online communities organized around the sport of “travel hacking,” where high value is found using various exploits of airline pricing systems and miles awards programs (e.g. <a href="https://edith.reisen/lifestyle/travel/credit_card.html">travel credit cards</a>). The oldest and largest of them is FlyerTalk.</p>
+:ET
