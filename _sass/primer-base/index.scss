@@ -3,3 +3,9 @@
 @import "./lib/normalize.scss";
 @import "./lib/base.scss";
 @import "./lib/typography-base.scss";
+
+html {
+    font-family: monospace;
+    background-color:blue;
+    color:white;
+  }
