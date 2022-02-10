@@ -21,7 +21,7 @@ kramdown:
 readme_index:
   enabled: true
 
-repository: hot-domme/james-liao
+repository: donnahorashi/donna-horashi
 
 sass:
     sass_dir: _sass
